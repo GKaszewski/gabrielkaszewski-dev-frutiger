@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@font-face {
+  font-family: "Frutiger";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Frutiger"), url("assets/fonts/Frutiger.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Frutiger Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Frutiger Bold"),
+    url("assets/fonts/Frutiger_bold.woff") format("woff");
+}
+
+:root {
+  --gradient-color-1: rgba(148, 148, 148, 0.9);
+  --gradient-color-2: rgba(71, 71, 71, 0.9);
+  --gradient-color-3: rgba(19, 19, 19, 0.9);
+  --gradient-color-4: rgba(7, 7, 7, 0.93);
+}
+
+@theme {
+  --default-font-family: "Frutiger", sans-serif;
+  --color-midnight: #3d3d3d;
+  --color-midnight-light: #707070;
+}
+
+@layer components {
+  .aero-gradient {
+    background: linear-gradient(
+      180deg,
+      var(--gradient-color-1) 0%,
+      var(--gradient-color-2) 20%,
+      var(--gradient-color-3) 40%,
+      var(--gradient-color-4) 100%
+    );
+  }
+
+  .aero-gradient-light {
+    background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+  }
+
+  .aero-gradient-dark {
+    background: linear-gradient(
+      100deg,
+      rgba(20, 20, 20, 0.8) 50%,
+      rgba(27, 27, 27, 0.9) 100%
+    );
+  }
+
+  .aero-gradient-glass {
+    background: linear-gradient(
+      rgba(34, 34, 34, 0.5),
+      rgba(26, 26, 26, 0.5),
+      rgba(26, 26, 26, 0.5)
+    );
+  }
+
+  .glass-sm {
+    @apply backdrop-blur-sm;
+    @apply bg-clip-padding;
+  }
+
+  .glass-md {
+    @apply backdrop-blur-md;
+    @apply bg-clip-padding;
+  }
+
+  .glass-lg {
+    @apply backdrop-blur-lg;
+    @apply bg-clip-padding;
+  }
+}
