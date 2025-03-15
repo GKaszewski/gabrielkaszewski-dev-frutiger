@@ -24,7 +24,7 @@
 }
 
 @theme {
-  --default-font-family: "Frutiger", sans-serif;
+  --default-font-family: "Segoe UI", "Frutiger", sans-serif;
   --color-midnight: #3d3d3d;
   --color-midnight-light: #707070;
 }
