@@ -1,0 +1,14 @@
+<article
+  class="aero-gradient-glass rounded-lg p-4 flex flex-col border-midnight-light border"
+>
+  <section
+    class="aero-gradient-dark p-2 rounded-lg border-midnight border prose-sm prose-a:text-blue-500 text-white flex flex-col"
+  >
+    <h6
+      class="aero-gradient text-white p-2 border border-midnight rounded-lg w-full items-center flex justify-center"
+    >
+      {{ title }}
+    </h6>
+    {{ body | markdown | safe }}
+  </section>
+</article>
