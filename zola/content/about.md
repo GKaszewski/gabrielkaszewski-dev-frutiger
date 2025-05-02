@@ -13,7 +13,7 @@ I have published one article — you can read it [here](https://dx.doi.org/10.10
 
 {% card(title="Hobbies") %}
 
-<ul class="flex flex-wrap gap-1 list-none p-2 w-full justify-between">
+<ul class="flex gap-1 p-2 w-full justify-between list-none!">
                   <li>Programming</li>
                   <li>Filmmaking</li>
                   <li>Gaming</li>
@@ -23,7 +23,7 @@ I have published one article — you can read it [here](https://dx.doi.org/10.10
 
 {% card(title="Interests") %}
 
-<ul class="flex flex-wrap gap-1 list-none p-2 w-full justify-between">
+<ul class="flex flex-wrap gap-1 p-2 w-full justify-between list-none!">
                   <li>Computer Science</li>
                   <li>Sci-Fi Books</li>
                   <li>Astronomy</li>
